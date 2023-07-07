@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>
+            Combinators
+        </title>
+        <style>
+            div p{
+                color: blue;
+            }
+            div > p{
+                color: yellow;
+            }
+            div + P{
+                color: green;
+            }
+            div ~ p{
+                color: red;
+            }
+            .positionfixed{
+                position: fixed;
+                top: 0;
+                right:0;
+            }
+            .positionRelative{
+                position: relative;
+                left:300px;
+            }
+            .positionAbsolute{
+                position: absolute;
+                top: 100px;
+            }
+            .Nature{
+                position:absolute;
+                left:25px;
+                color: white;
+                font-size: larger;
+                font-family: cursive;
+            }
+            .Image{
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- CSS Combinators -->
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <span>
+                <p> Lorem ipsum dolor sit amet.</p>
+            </span>
+        </div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="positionfixed">Lets Check the CSS property Positionfixed</div>
+
+        <div class="positionRelative">Lets Check the CSS property Position Relative</div>
+        <div  class="positionAbsolute">Lets Check the CSS property Position Absolute</div>
+        <div calss="Image" id="img">
+            <img src="rcb.jpg">
+            <span class="Nature">Nature.jpg</span>
+        </div>
+
+
+
+        <!--1. Descedent Selector 
+        div p{
+            property:value;
+        }-->
+
+        <!--2. Child selector
+        div > p{
+            property:value;
+        } -->
+        <!--3. Adjacent Sibling selector
+        div + p{
+            property:value;
+        } -->
+        <!--4.General Sibling Selector
+             div ~ p{
+            property:value;
+        } -->
+        <!--4. Position Fixed -->
+
+    </body>
+</html>
